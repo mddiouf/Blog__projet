@@ -13,8 +13,9 @@ def post_detail(request,id):
     print("#==="*40)
 
 def blog(request):
+    posts = Post.objects.all().order_by('-created_at')
 
-    return render(request,'blog/blog.html',{'blog':blog})
+    return render(request,'blog/blog.html',{'posts': posts})
 
  
 def index(request):

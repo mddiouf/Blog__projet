@@ -2,7 +2,7 @@ from django .urls import path # type: ignore
 from .views import post_list
 from .views import post_detail,le_formulaire , blog , index
 urlpatterns = [
-       path('post/', post_list, name='post_list'),
+       path('Post/', post_list, name='post_list'),
 
        path('post/<int:id>',post_detail,name='post_detail'),
 
